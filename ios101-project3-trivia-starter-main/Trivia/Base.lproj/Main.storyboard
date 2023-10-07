@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lDU-Gf-dEZ">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Trivia View Controller-->
+        <scene sceneID="31V-Cx-Fkw">
+            <objects>
+                <viewController id="lDU-Gf-dEZ" customClass="TriviaViewController" customModule="Trivia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1mO-ME-tca">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PicTheArtist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uxl-Wf-Ndh">
+                                <rect key="frame" x="51" y="65" width="291" height="85.333333333333314"/>
+                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="73"/>
+                                <color key="textColor" red="0.92809683080000005" green="0.45166288199999999" blue="0.44935488470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="epv-kh-poP">
+                                <rect key="frame" x="21.666666666666657" y="165.33333333333331" width="350" height="592.66666666666674"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wm8-kn-xv5">
+                                        <rect key="frame" x="149.66666666666669" y="0.0" width="50.333333333333343" height="34.666666666666664"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beatles" translatesAutoresizingMaskIntoConstraints="NO" id="WXD-BD-B25">
+                                        <rect key="frame" x="0.0" y="58.666666666666657" width="350" height="249.99999999999997"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="350" id="Wbb-Fk-ZG7"/>
+                                            <constraint firstAttribute="height" constant="250" id="oAU-1O-Nua"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdP-V8-Adx">
+                                        <rect key="frame" x="160" y="332.66666666666663" width="30" height="47"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="30"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title=""/>
+                                        <connections>
+                                            <action selector="tap:" destination="lDU-Gf-dEZ" eventType="touchUpInside" id="TC3-Sm-G3A"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wlp-1W-xtw">
+                                        <rect key="frame" x="160" y="403.66666666666663" width="30" height="47"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="30"/>
+                                        <color key="tintColor" red="0.97989338640000001" green="0.95235997439999998" blue="0.90843516589999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title=""/>
+                                        <connections>
+                                            <action selector="tap:" destination="lDU-Gf-dEZ" eventType="touchUpInside" id="7QO-zC-DwS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEC-DW-SAx">
+                                        <rect key="frame" x="160" y="474.66666666666663" width="30" height="47"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="30"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <connections>
+                                            <action selector="cTap:" destination="lDU-Gf-dEZ" eventType="touchUpInside" id="dfD-C8-Umh"/>
+                                            <action selector="tap:" destination="lDU-Gf-dEZ" eventType="touchUpInside" id="sA8-yH-bsb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAl-XA-Ubu">
+                                        <rect key="frame" x="160" y="545.66666666666663" width="30" height="47"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="30"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <connections>
+                                            <action selector="tap:" destination="lDU-Gf-dEZ" eventType="touchUpInside" id="0qT-hk-R1V"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="tintColor" red="0.97989338640000001" green="0.95235997439999998" blue="0.90843516589999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 1/3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ozr-jt-rlU">
+                                <rect key="frame" x="74" y="783" width="244" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uXG-fy-07r"/>
+                        <color key="backgroundColor" red="0.98129429768041232" green="0.95158595843409022" blue="0.91158512646419632" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="epv-kh-poP" firstAttribute="top" secondItem="uxl-Wf-Ndh" secondAttribute="bottom" constant="15" id="5Jk-Dk-j5r"/>
+                            <constraint firstItem="uxl-Wf-Ndh" firstAttribute="centerX" secondItem="1mO-ME-tca" secondAttribute="centerX" id="FKT-sI-F9y"/>
+                            <constraint firstItem="epv-kh-poP" firstAttribute="centerX" secondItem="1mO-ME-tca" secondAttribute="centerX" id="Occ-up-sNM"/>
+                            <constraint firstItem="uxl-Wf-Ndh" firstAttribute="top" secondItem="uXG-fy-07r" secondAttribute="top" constant="6" id="cPg-VC-shK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="a" destination="xdP-V8-Adx" id="Cet-GX-1km"/>
+                        <outlet property="artist" destination="WXD-BD-B25" id="o27-G4-HAB"/>
+                        <outlet property="b" destination="Wlp-1W-xtw" id="ZCe-tb-fsg"/>
+                        <outlet property="c" destination="KEC-DW-SAx" id="M3R-bS-uQ2"/>
+                        <outlet property="d" destination="kAl-XA-Ubu" id="Vja-x6-mhq"/>
+                        <outlet property="questionNumber" destination="wm8-kn-xv5" id="FYQ-vl-PCv"/>
+                        <outlet property="scoreBoard" destination="ozr-jt-rlU" id="luJ-SK-HMV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="68f-eR-Bky" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-40.458015267175568" y="-54.225352112676056"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="beatles" width="1000" height="600"/>
+    </resources>
+</document>
